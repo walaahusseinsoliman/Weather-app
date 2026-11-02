@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-bg">
+        <nav class="navbar navbar-expand-lg weather-navbar">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                    <span class="weather-icon">☁</span>
+
+                    <div>
+                        <h5 class="text-white mb-1">Weather</h5>
+                        <small class="text-white-50">tagline goes here</small>
+                    </div>
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live cameras</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <!-- Search Section -->
+        <div class="container weather-container">
+
+            <div class="search-box mb-5">
+                <input type="text" id="search_input" class="form-control" placeholder="Find your location...">
+            </div>
+
+
+
+            <!-- Weather Cards -->
+            <div class="row g-0 weather-cards">
+
+                <!-- Today's Weather -->
+                <div class="col-lg-4">
+                    <div class="weather-card today">
+
+                        <div class="weather-header d-flex justify-content-between">
+                            <p id="today_date_day_name" class="m-0">Sunday</p>
+                            <span>
+                                <span id="today_date_day_number">30</span>
+                                <span id="today_date_day_month">May</span>
+                            </span>
+
+                        </div>
+
+                        <div class="weather-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 id="today_city">Cairo</h3>
+                                    <h1 id="today_temperature">20° C</h1>
+                                    <p id="today_condition_text">sunny</p>
+                                </div>
+                                <div id="today_condition_img">
+                                    <img src="" alt="Weather condition">
+                                </div>
+                            </div>
+
+                            <div class="weather-details d-flex flex-wrap gap-4">
+                                <span class="weather-info">
+                                    ☂<span id="today_humidity">20</span>
+                                    🌬<span id="today_wind">30 km/h</span>
+                                    ◉<span id="wind_direction">NNE</span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Second Day -->
+                <div class="col-lg-4">
+                    <div class="weather-card">
+
+                        <div class="text-center middle-header">
+                            <span class="next-day">Friday</span>
+                        </div>
+
+                        <div class="middle-body  text-center">
+                            <div class="next-day-img">
+                                <img src="" alt="Weather condition">
+                            </div>
+                            <h2 class="next-max-temp">° C</h2>
+                            <h4 class="next-min-temp">15° C</h4>
+                            <p class="next-condition">partly cloudy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Third Day -->
+                <div class="col-lg-4">
+                    <div class="weather-card">
+
+                        <div class="weather-header text-center">
+                            <span class="next-day">Friday</span>
+                        </div>
+
+                        <div class="weather-body text-center">
+                            <div class="next-day-img">
+                                <img src="" alt="Weather condition">
+                            </div>
+                            <h2 class="next-max-temp">° C</h2>
+                            <h4 class="next-min-temp">15° C</h4>
+                            <p class="next-condition">partly cloudy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
